@@ -1,7 +1,7 @@
 services:
   nginx:
     container_name: nginx
-    Dockerfille: .
+    Dockerfile: .
     ports:
       - "80:80"
     volumes:
