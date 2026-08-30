@@ -1,10 +1,10 @@
 services:
   nginx:
     container_name: nginx
-    dockerfile: .
+    build: .
     ports:
       - "80:80"
     volumes:
-      - ./nignx.conf:/ect/nginx/ningx.conf:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     restart: unless-stopped
     
