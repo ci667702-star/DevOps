@@ -4,3 +4,9 @@ on:
     branches: ['main']
   workflow_dispatch:
 
+jobs:
+  build:
+    runs-on: ubuntu-Latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4

@@ -9,8 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-Latest
     steps:
-      - name : code checkout
-        uses: actions/checkout@v4
       - name: build
         uses: appleboy/ssh-action@v1.2.5
         with:
