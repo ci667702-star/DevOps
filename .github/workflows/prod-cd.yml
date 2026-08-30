@@ -12,7 +12,7 @@ jobs:
       - name : code checkout
         uses: actions/checkout@v4
       - name: build
-        uses: appleboy/scp-action@v1.2.5
+        uses: appleboy/ssh-action@v1.2.5
         with:
           key: ${{ secrets.SERVER_SSH_KEY }}
           host: ${{ secrets.SERVER_HOST }}
