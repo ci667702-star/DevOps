@@ -1,0 +1,10 @@
+services:
+  nginx:
+    container_name: nginx
+    Dockerfille: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./nignx.conf:/ect/nginx/ningx.conf:ro
+    restart: unless-stopped
+    
